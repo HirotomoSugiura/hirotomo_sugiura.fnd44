@@ -64,10 +64,10 @@ let calculateScore = (hand) => {
             console.log(typeof card.value)
         }
     })
-    while(score > 21 && count > 0){
-        score -= 10;
-        count --;
-    }
+    // while(score > 21 && count > 0){
+    //     score -= 10;
+    //     count --;
+    // }
     return score;
 }
 
