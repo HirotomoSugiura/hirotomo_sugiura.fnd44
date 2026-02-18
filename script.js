@@ -8,7 +8,6 @@ let deck = [];
 let dealerHand = [];
 let playerHand = [];
 let gameOver = false;
-let j;
 
 const dealerCards = document.getElementById("dealer-cards");
 const playerCards = document.getElementById("player-cards");
