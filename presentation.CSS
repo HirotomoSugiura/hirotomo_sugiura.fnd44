@@ -1,19 +1,18 @@
-/* 左にルール、右にゲーム画面 */
 .layout {
   display: flex;
   align-items: flex-start;
   gap: 40px;
 }
 
-/* 左側のルール欄 */
 .rules {
   width: 550px;
-  background: rgba(255, 255, 255, 0.47);
-  margin-left: 10px;
-  border-radius: 8px;
-  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.6);
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  backdrop-filter: blur(3px);
 }
-
 
 .game-area {
   display: flex;
@@ -41,8 +40,14 @@ body{
 }
 
 h1{
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 60px;
+  text-align: center;
+  color: gold;
+  text-shadow: 
+    0 0 10px rgba(255,215,0,0.8),
+    0 0 20px rgba(255,215,0,0.6),
+    0 0 30px rgba(255,215,0,0.4);
+  letter-spacing: 3px;
 }
 
 .hand{
@@ -66,6 +71,16 @@ h3{
   justify-content: center;
 }
 
+#hit, #stand, #restart {
+  font-size: 26px;
+  width: 150px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
 
 #hit{
     font-size: 25px;
@@ -75,7 +90,7 @@ h3{
     border: solid 1px black;
     outline: none;
     cursor: pointer;
-    background-color: rgb(7, 163, 90);
+    background: linear-gradient(1000deg, #1ed760, #0e9e45)
 }
 #stand{
     font-size: 25px;
@@ -85,7 +100,7 @@ h3{
     border: solid 1px black;
     outline: none;
     cursor: pointer;
-    background-color: lightskyblue;
+    background: linear-gradient(1000deg, #4db8ff, #1e7fcc)
 }
 #restart{
     font-size: 25px;
@@ -95,9 +110,32 @@ h3{
     border: solid 1px black;
     outline: none;
     cursor: pointer;
-    background-color: gray;
+    background: linear-gradient(1000deg, #999, #555);
 }
 
 .game-area{
-    background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.35);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
 }
+
+.card {
+  display: inline-block;
+  padding: 12px 18px;
+  margin: 5px;
+  font-size: 32px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease;
+}
+
+
+
+
+
